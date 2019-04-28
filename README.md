@@ -37,7 +37,19 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 ![Delete Polygon Layer](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/deleteLayer.png)
 
 
+### 5. Click on layer settings to expose the available marks and channels options.
 
+![Layer Settings](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/layerSettings.png)
+
+#### Marks
+
+![Marks](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/marks.png)
+
+#### Channels
+
+> The type of mark will change the available channel options.
+
+![Channels](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/channels.png)
 
 
 
