@@ -113,7 +113,7 @@ The map color and height are now both set to represent
 3. Select the **reported_date** field to filter the data by.
 4. Move the slider in from the time line to adjust the filter to one month.
     * Set the start and end date to **06/01/14 - 07/01/14** 
-5. Press the play button to animate the filter overtime.
+5. Press the **play** button to animate the filter over time.
     > Stop the animation by pressing the pause button which appears once the animation is playing.
 
 ![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/filterAndAnimate.png)  
@@ -121,7 +121,7 @@ The map color and height are now both set to represent
 ### 12. Set the colormap to display by attribute values.
 
 1. Switch back to the layer view by clicking the layer icon on the top left corner of the map.
-2. Click underneath "Color Based On" in the layer settings where it says "Point Cloud" and set the variable to **reported_hour**.
+2. Click underneath **Color Based On** in the layer settings where it says **Point Cloud** and set the variable to **reported_hour**.
 ![Color Based On](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/colorbasedon.png)  
 
 3. Change the aggregation setting to **median**
