@@ -1,0 +1,146 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Kepler.gl embedded map</title>
+    
+      <!--Uber Font-->
+      <link rel="stylesheet" href="//d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
+    
+      <!--MapBox css-->
+      <link href="//api.tiles.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css" rel="stylesheet">
+    
+      <!-- Load React/Redux -->
+      <script src="https://unpkg.com/react@16.8.4/umd/react.production.min.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.production.min.js" crossorigin></script>
+      <script src="https://unpkg.com/redux@3.7.2/dist/redux.js" crossorigin></script>
+      <script src="https://unpkg.com/react-redux@4.4.9/dist/react-redux.min.js" crossorigin></script>
+      <script src="https://unpkg.com/styled-components@4.1.3/dist/styled-components.min.js" crossorigin></script>
+      <script src="https://unpkg.com/react-virtualized@9.21.0/dist/umd/react-virtualized.js" crossorigin></script>
+      
+      <!-- Load Kepler.gl latest version-->
+      <script src="https://unpkg.com/kepler.gl/umd/keplergl.min.js" crossorigin></script>
+      <!-- You can also specify a specific versions by doing the following -->
+      <!--<script src="https://unpkg.com/kepler.gl@0.2.2/umd/keplergl.min.js"></script>-->
+    
+      <style type="text/css">
+        body {margin: 0; padding: 0; overflow: hidden;}
+      </style>
+    
+      <!--MapBox token-->
+      <script>
+        /**
+         * Provide your MapBox Token
+         **/
+        const MAPBOX_TOKEN = 'pk.eyJ1IjoiY3R3aGl0ZSIsImEiOiJjanYxZWVpdG4xdGt3M3lzMHNncGYwZmt6In0.CwhIB7SNDjqYXIewQ9jiHg';
+        const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
+      </script>
+    </head>
+    <body>
+      <!-- We will put our React component inside this div. -->
+      <div id="app">
+        <!-- Kepler.gl map will be placed here-->
+      </div>
+    
+      <!-- Load our React component. -->
+      <script>
+        /* Validate Mapbox Token */
+        if ((MAPBOX_TOKEN || '') === '' || MAPBOX_TOKEN === 'PROVIDE_MAPBOX_TOKEN') {
+          alert(WARNING_MESSAGE);
+        }
+    
+        /** STORE **/
+        const reducers = (function createReducers(redux, keplerGl) {
+          return redux.combineReducers({
+            // mount keplerGl reducer
+            keplerGl: keplerGl.keplerGlReducer
+          });
+        }(Redux, KeplerGl));
+    
+        const middleWares = (function createMiddlewares(keplerGl) {
+          return keplerGl.enhanceReduxMiddleware([
+            // Add other middlewares here
+          ]);
+        }(KeplerGl));
+    
+        const enhancers = (function craeteEnhancers(redux, middles) {
+          return redux.applyMiddleware(...middles);
+        }(Redux, middleWares));
+    
+        const store = (function createStore(redux, enhancers) {
+          const initialState = {};
+    
+          return redux.createStore(
+            reducers,
+            initialState,
+            redux.compose(enhancers)
+          );
+        }(Redux, enhancers));
+        /** END STORE **/
+        
+        /** COMPONENTS **/
+        const KeplerElement = (function (react, reactVirtualized, keplerGl, mapboxToken) {
+          return function() {
+            return react.createElement(
+              'div',
+              {style: {position: 'absolute', left: 0, width: '100vw', height: '100vh'}},
+              React.createElement(reactVirtualized.AutoSizer, null, function (props) {
+                return React.createElement(keplerGl.KeplerGl, {
+                  mapboxApiAccessToken: mapboxToken,
+                  id: "map",
+                  width: props.width,
+                  height: props.height
+                });
+              })
+            )
+          }
+        }(React, ReactVirtualized, KeplerGl, MAPBOX_TOKEN));
+    
+        const app = (function createReactReduxProvider(react, reactRedux, KeplerElement) {
+          return react.createElement(
+            reactRedux.Provider,
+            {store},
+            react.createElement(KeplerElement, null)
+          )
+        }(React, ReactRedux, KeplerElement));
+        /** END COMPONENTS **/
+    
+        /** Render **/
+        (function render(react, reactDOM, app) {
+          reactDOM.render(app, document.getElementById('app'));
+        }(React, ReactDOM, app));
+      </script>
+      <!-- The next script will show how to interact directly with Kepler map store -->
+      <script>
+        /**
+         * Customize map.
+         * In the following section you can use the store object to dispatch Kepler.gl actions
+         * to add new data and customize behavior
+         */
+        (function customize(keplerGl, store) {
+          fetch("https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson", {
+            method: "GET",
+            cache: "no-cache",
+            headers: {
+                "Content-Type": "application/json"
+            }
+          })
+            .then(res => res.json())
+            .then(data => {
+              const datasets = [{"version":"v1","data":{"id":"y540sxe7f","label":"https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson","color":[192,108,132],"allData": [] }}];
+              return datasets[0].data.allData = data.features;
+            })
+            .then(datasets => {
+              const config = {"version":"v1","config":{"visState":{"filters":[{"dataId":"y540sxe7f","id":"df2119n5","name":"reported_date","type":"timeRange","value":[1427148504900,1429779669900],"enlarged":true,"plotType":"histogram","yAxis":null}],"layers":[{"id":"oofj6krj","type":"grid","config":{"dataId":"y540sxe7f","label":"Point","color":[14,112,119],"columns":{"lat":"latitude","lng":"longitude"},"isVisible":true,"visConfig":{"opacity":0.8,"worldUnitSize":0.25,"colorRange":{"name":"Uber Viz Diverging 1.5","type":"diverging","category":"Uber","colors":["#00939C","#5DBABF","#BAE1E2","#F8C0AA","#DD7755","#C22E00"],"reversed":false},"coverage":1,"sizeRange":[0,500],"percentile":[0,100],"elevationPercentile":[0,100],"elevationScale":5,"hi-precision":false,"colorAggregation":"median","sizeAggregation":"count","enable3d":true},"textLabel":{"field":null,"color":[255,255,255],"size":50,"offset":[0,0],"anchor":"middle"}},"visualChannels":{"colorField":{"name":"reported_hour","type":"integer"},"colorScale":"quantize","sizeField":null,"sizeScale":"linear"}}],"interactionConfig":{"tooltip":{"fieldsToShow":{"y540sxe7f":["OBJECTID","GlobalID","case_number","crime_category","crime_code"]},"enabled":true},"brush":{"size":0.5,"enabled":false}},"layerBlending":"normal","splitMaps":[]},"mapState":{"bearing":24,"dragRotate":true,"latitude":35.81301013475619,"longitude":-78.67642974458533,"pitch":50,"zoom":10.744655454629939,"isSplit":false},"mapStyle":{"styleType":"dark","topLayerGroups":{},"visibleLayerGroups":{"label":true,"road":true,"border":false,"building":true,"water":true,"land":true,"3d building":false},"mapStyles":{}}}};
+              const loadedData = keplerGl.KeplerGlSchema.load(
+                datasets,
+                config
+              );
+            //   store.dispatch(keplerGl.addDataToMap(loadedData));
+            });
+        }(KeplerGl, store))
+      </script>
+    </body>
+    </html>
+  

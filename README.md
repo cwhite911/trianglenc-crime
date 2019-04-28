@@ -111,7 +111,7 @@ The map color and height are now both set to represent
 1. Click the filter icon on the top left of the screen to switch to the filter view.
 2. Click the **Add filter** button to add a new filter.
 3. Select the **reported_date** field to filter the data by.
-4. Move the slider in from the time line to adjust the filter to one month.
+4. Move the slider in from the timeline to adjust the filter to one month.
     * Set the start and end date to **06/01/14 - 07/01/14** 
 5. Press the **play** button to animate the filter over time.
     > Stop the animation by pressing the pause button which appears once the animation is playing.
@@ -132,3 +132,20 @@ The map color and height are now both set to represent
 ![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/changeColorAttribute.png)  
 
 
+### 13. Create a team visualization with the other members at your table or by yourself.
+
+#### Requriements
+
+> Hint: View the full dataset at https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs/data
+
+1. Select a different mark.
+2. Explore other channel options.
+3. Export an image of your visualization, and save it to the shared Class Google Drive in the Kepler.gl/TeamViz/<Name Your Viz>.png folder.
+    1. Click the **Share** button.
+    2. Click **Export Image**
+
+    ![Exprot Image](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/exportImage.png)
+
+    3. Select export settings and click **Download**
+
+    ![Exprot Settings](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/exportsettings.png)
