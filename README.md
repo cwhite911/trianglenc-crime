@@ -77,4 +77,18 @@ Changes made to a layers mark or channels update the legend automatically.
 
 ![Set the Radius](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/updateradius.png)
 
+### 9. Change the colormap to a sequential option.
+
+1. Click the colormap to display the colormap options.
+2. Select a sequential colormap from the list of available options.
+
+![Select colormap](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectColormap.png)
+
+Once the colormap is select the map and legend automatically updated.
+
+![colormap](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectedColormap.png)
+
+
+
+
 
