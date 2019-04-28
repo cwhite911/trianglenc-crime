@@ -22,7 +22,7 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 2. Copy and paste the crime data URL where the text input says "File Url".
 
 3. Fetch the data by pressing the "Fetch" button.
-> Be patient the data will take a minute to load because it's ~250,000 points (~23.0 MB).
+> Be patient the data will take a minute to load because it's ~250,000 points.
 
 ![Get Data](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/fetchData.png)
 
@@ -139,7 +139,7 @@ The map color and height are now both set to represent
 > Hint: View the full dataset at https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs/data
 
 1. Select a different mark.
-2. Explore other channel options.
+2. Explore other channel and filter options.
 3. Export an image of your visualization, and save it to the shared Class Google Drive in the Kepler.gl/TeamViz/\<Name Your Viz>.png folder.
     1. Click the **Share** button.
     2. Click **Export Image**
