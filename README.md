@@ -140,7 +140,7 @@ The map color and height are now both set to represent
 
 1. Select a different mark.
 2. Explore other channel options.
-3. Export an image of your visualization, and save it to the shared Class Google Drive in the Kepler.gl/TeamViz/<Name Your Viz>.png folder.
+3. Export an image of your visualization, and save it to the shared Class Google Drive in the Kepler.gl/TeamViz/\<Name Your Viz>.png folder.
     1. Click the **Share** button.
     2. Click **Export Image**
 
