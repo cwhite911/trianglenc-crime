@@ -92,9 +92,26 @@ Once the colormap is select the map and legend automatically update.
 ### 10. Enable the layers height option and set the map view to 3D.
 
 1. In the layer settings toggle the height option to on.
+    > By default, the height is set by the point count.
 2. Enable the maps 3D view by clicking the "3D Map" button in the top right corner of map.
+
+
+
+> Play with the height scale to adjust the exaggeration.
+
 
 ![Height 3D View](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/height3D.png)
 
+The map color and height are now both set to represent
 
+### 11. Filter the data to show one month of data.
 
+1. Click the filter icon on the top left of the screen to switch to the filter view.
+2. Click the "Add filter" button to add a new filter.
+3. Select the "reported_date" field to filter the data by.
+4. Move the slider in from the time line to adjust the filter to one month.
+    * Set the start and end date to 06/01/14 - 07/01/14 
+5. Press the play button to animate the filter overtime.
+    > Stop the animation by pressing the pause button which appears once the animation is playing.
+
+![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/filterAndAnimate.png)  
