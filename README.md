@@ -61,14 +61,20 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 
 The map now displays a grid aggregated by point count in 1km cells instead of points.
 
-### 7.  Display the legend by clicking the legend button in the top right corner of the map.
+### 7. Display the legend by clicking the legend button in the top right corner of the map.
 
 ![Display Legend](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/openlegend.png)
 
-The legend is updated automatically as changes are made to a layers mark or channels.
+Changes made to a layers mark or channels update the legend automatically.
 
 ![Close up of Legend](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/baseLegend.png)
 
+### 8. Change the radius of each grid cell to 0.25 km.
 
+1. Double click the text box for the radius setting and type "0.25" then press enter to update the map.
+
+> The slider can also be used to adjust the radius setting.
+
+![Set the Radius](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/updateradius.png)
 
 
