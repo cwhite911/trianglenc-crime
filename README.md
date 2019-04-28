@@ -84,11 +84,17 @@ Changes made to a layers mark or channels update the legend automatically.
 
 ![Select colormap](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectColormap.png)
 
-Once the colormap is select the map and legend automatically updated.
+Once the colormap is select the map and legend automatically update.
 
 ![colormap](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectedColormap.png)
 
 
+### 10. Enable the layers height option and set the map view to 3D.
+
+1. In the layer settings toggle the height option to on.
+2. Enable the maps 3D view by clicking the "3D Map" button in the top right corner of map.
+
+![Height 3D View](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/height3D.png)
 
 
 
