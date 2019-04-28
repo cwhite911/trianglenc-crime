@@ -132,6 +132,8 @@ The map color and height are now both set to represent
 ![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/changeColorAttribute.png)  
 
 
+> How can you improve the current visualization? Take a few minutes to explore other channel options.
+
 ### 13. Create a team visualization with the other members at your table or by yourself.
 
 #### Requriements
