@@ -52,6 +52,15 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 ![Channels](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/channels.png)
 
 
+### 6. Change the mark to Grid
+
+1. Under Basic click the "Point" button  (In the image it is the Grid button).
+2. Select "Grid" from the available options.
+
+![Select Grid Mark](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectGridMark.png)
+
+The map now displays a grid aggregated by point count in 1km cells instead of points.
+
 
 
 
