@@ -1,6 +1,8 @@
 # Kepler.gl Lab
 
-In this tutorial, you use Kepler.gl an open-source data visualization tool created by [Uber's data visualization team](http://vis.gl/) to visualize [crime data](https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs) in Raleigh, North Carolina using the city's [open data portal](https://data-ral.opendata.arcgis.com/).
+In this tutorial, you use Kepler.gl an open-source data visualization tool created by [Uber's data visualization team](http://vis.gl/) to visualize [crime data](https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs) in Raleigh, North Carolina from the city's [open data portal](https://data-ral.opendata.arcgis.com/).
+
+By completing the tutorial you will learn how to add data into Kepler.gl and customize it using various marks, channels, and filters.
 
 ![Final Product](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/finalProduct.gif)
 
@@ -54,8 +56,8 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 
 ### 6. Change the mark to Grid
 
-1. Under Basic click the "Point" button  (In the image it is the Grid button).
-2. Select "Grid" from the available options.
+1. Under Basic click the **Point** button  (In the image it is the Grid button).
+2. Select **Grid** from the available options.
 
 ![Select Grid Mark](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/selectGridMark.png)
 
@@ -71,7 +73,7 @@ Changes made to a layers mark or channels update the legend automatically.
 
 ### 8. Change the radius of each grid cell to 0.25 km.
 
-1. Double click the text box for the radius setting and type "0.25" then press enter to update the map.
+1. Double click the text box for the radius setting and type **0.25** then press enter to update the map.
 
 > The slider can also be used to adjust the radius setting.
 
@@ -93,7 +95,7 @@ Once the colormap is select the map and legend automatically update.
 
 1. In the layer settings toggle the height option to on.
     > By default, the height is set by the point count.
-2. Enable the maps 3D view by clicking the "3D Map" button in the top right corner of map.
+2. Enable the maps 3D view by clicking the **3D Map** button in the top right corner of map.
 
 
 
@@ -107,11 +109,24 @@ The map color and height are now both set to represent
 ### 11. Filter the data to show one month of data.
 
 1. Click the filter icon on the top left of the screen to switch to the filter view.
-2. Click the "Add filter" button to add a new filter.
-3. Select the "reported_date" field to filter the data by.
+2. Click the **Add filter** button to add a new filter.
+3. Select the **reported_date** field to filter the data by.
 4. Move the slider in from the time line to adjust the filter to one month.
-    * Set the start and end date to 06/01/14 - 07/01/14 
+    * Set the start and end date to **06/01/14 - 07/01/14** 
 5. Press the play button to animate the filter overtime.
     > Stop the animation by pressing the pause button which appears once the animation is playing.
 
 ![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/filterAndAnimate.png)  
+
+### 12. Set the colormap to display by attribute values.
+
+1. Switch back to the layer view by clicking the layer icon on the top left corner of the map.
+2. Click underneath "Color Based On" in the layer settings where it says "Point Cloud" and set the variable to **reported_hour**.
+![Color Based On](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/colorbasedon.png)  
+
+3. Change the aggregation setting to **median**
+![Aggregate Reported Hour](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/aggregateReportedHour.png)  
+
+![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/changeColorAttribute.png)  
+
+
