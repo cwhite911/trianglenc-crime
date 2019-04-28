@@ -61,6 +61,13 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 
 The map now displays a grid aggregated by point count in 1km cells instead of points.
 
+### 7.  Display the legend by clicking the legend button in the top right corner of the map.
+
+![Display Legend](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/openlegend.png)
+
+The legend is updated automatically as changes are made to a layers mark or channels.
+
+![Close up of Legend](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/baseLegend.png)
 
 
 
