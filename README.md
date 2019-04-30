@@ -121,15 +121,18 @@ The map color and height are now both set to represent
 ### 12. Set the colormap to display by attribute values.
 
 1. Switch back to the layer view by clicking the layer icon on the top left corner of the map.
-2. Click underneath **Color Based On** in the layer settings where it says **Point Cloud** and set the variable to **reported_hour**.
+    
+2. Click the three dots to the right of the **Color** section to open the color options.
+
+3. Click underneath **Color Based On** in the layer settings where it says **Point Cloud** and set the variable to **reported_hour**.
 
 ![Color Based On](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/colorbasedon.png)  
 
-3. Change the aggregation setting to **median**
+4. Change the aggregation setting to **median**
 
 ![Aggregate Reported Hour](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/aggregateReportedHour.png)  
 
-![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/changeColorAttribute.png)  
+![Filter and Animate](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/changeColorAttributeRevised.png)  
 
 
 > How can you improve the current visualization? Take a few minutes to explore other channel options.
