@@ -30,7 +30,7 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 
 ![Get Data](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/loadedData.png)
 
-> **WARNING**: Don't reload your page or you will lose your work and need to restart from [step 2](#datadownload).
+> **WARNING**: Do Not reload your page or you will lose your work and need to restart from [step 2](#datadownload).
 
 ### 4. In the left panel find the point and polygon layers that were created by default and delete the polygon layer.
 
@@ -152,8 +152,6 @@ The map color and height are now both set to represent
 
 ### 13. Create a team visualization with the other members at your table or by yourself using one of the following datasets.
 
-#### Requriements
-
 <table>
 <thead>
     <tr>
@@ -179,6 +177,8 @@ The map color and height are now both set to represent
 > Hint 1: You should already have the **Raleigh crime** data loaded, so click **+ Add Layer** on the botton left of the left panel to get started. 
 
 > Hint 2: To use the **Class Viz** data click the **+ Add Data** button on the top left of the left panel and then copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
+
+#### Requriements
 
 1. Select a different mark.
 2. Explore other channel and filter options.
