@@ -10,7 +10,7 @@ By completing the tutorial you will learn how to add data into Kepler.gl and cus
 
 ![Final Product](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/getstarted.png)
 
-### 2. Load the Raleigh crime data to the map using the following URL from Raleigh's open data portal.
+### <a name="datadownload"></a> 2. Load the Raleigh crime data to the map using the following URL from Raleigh's open data portal.
 
 [Raleigh Crime Data](https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs)
 ```
@@ -162,6 +162,10 @@ The map color and height are now both set to represent
     </tr>
 </tbody>
 </table>
+
+> Hint 1: You should already have the crime data loaded, so click add layer on the left panel to get started. 
+
+> Hint 2: To use the  Class Viz data copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
 
 1. Select a different mark.
 2. Explore other channel and filter options.
