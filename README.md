@@ -138,7 +138,7 @@ The map color and height are now both set to represent
 
 > How can you improve the current visualization? Take a few minutes to explore other channel options.
 
-### Warning: If you would like to save your maps configuration do it now before continuing. 
+### Optional: If you would like to save your maps configuration do it now before continuing. 
 
 1. Click **Share** on the top of the left panel
 2. Click **Export Config**
