@@ -163,9 +163,9 @@ The map color and height are now both set to represent
 </tbody>
 </table>
 
-> Hint 1: You should already have the crime data loaded, so click **add layer** on the left panel to get started. 
+> Hint 1: You should already have the **Raleigh crime** data loaded, so click **+ Add Layer** on the botton left of the left panel to get started. 
 
-> Hint 2: To use the Class Viz data copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
+> Hint 2: To use the **Class Viz** data click the **+ Add Data** button on the top left of the left panel and then copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
 
 1. Select a different mark.
 2. Explore other channel and filter options.
