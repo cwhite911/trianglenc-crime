@@ -146,30 +146,30 @@ The map color and height are now both set to represent
     <tr>
     <th>Name</th>
     <th>URL</th>
-    <th>Metadata</th>
+    <th>Meta</th>
     </tr>
 </thead>
 <tbody>
     <tr>
         <td>Raleigh Crime</td>
         <td><code>https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson</code></td>
-        <td><a href="https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs/data">Metadata</a></td>
+        <td><a href="https://data-ral.opendata.arcgis.com/datasets/raleigh-police-incidents-nibrs/data">Meta</a></td>
     </tr>
     <tr>
         <td>Class Viz</td>
         <td><code>https://docs.google.com/a/ncsu.edu/spreadsheets/d/e/2PACX-1vRPlkwHMBH6td8NrPl6quFspWJCiYbjUkBcdlU3xqJG1yeqPuTrIZF535o2KRN0pW8kvXXQayy3DUZd/pub?gid=0&single=true&output=csv</code></td>
-        <td><a href="https://docs.google.com/spreadsheets/d/119kVAq-UxSBMFMNL9FJK2rFYy6Lvb7IZ8Uqhars7oz8/edit?usp=sharing">Metadata</a></td>
+        <td><a href="https://docs.google.com/spreadsheets/d/119kVAq-UxSBMFMNL9FJK2rFYy6Lvb7IZ8Uqhars7oz8/edit?usp=sharing">Meta</a></td>
     </tr>
 </tbody>
 </table>
 
-> Hint 1: You should already have the crime data loaded, so click add layer on the left panel to get started. 
+> Hint 1: You should already have the crime data loaded, so click **add layer** on the left panel to get started. 
 
-> Hint 2: To use the  Class Viz data copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
+> Hint 2: To use the Class Viz data copy the url from the above table and follow the steps for [loading data](#datadownload) at the begining of the tutorial. 
 
 1. Select a different mark.
 2. Explore other channel and filter options.
-3. Export an image of your visualization, and save it to the shared Class Google Drive in the Kepler.gl/TeamViz/\<Name Your Viz>.png folder.
+3. Export an image of your visualization, and save it to the shared Class Google Drive in the **Kepler.gl/TeamViz/\<Name Your Viz>.png** folder.
     1. Click the **Share** button.
     2. Click **Export Image**
 
