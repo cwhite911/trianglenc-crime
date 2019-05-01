@@ -30,6 +30,7 @@ https://opendata.arcgis.com/datasets/24c0b37fa9bb4e16ba8bcaa7e806c615_0.geojson
 
 ![Get Data](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/loadedData.png)
 
+> **WARNING**: Don't reload your page or you will lose your work and need to restart from [step 2](#datadownload).
 
 ### 4. In the left panel find the point and polygon layers that were created by default and delete the polygon layer.
 
@@ -136,6 +137,18 @@ The map color and height are now both set to represent
 
 
 > How can you improve the current visualization? Take a few minutes to explore other channel options.
+
+### Warning: If you would like to save your maps configuration do it now before continuing. 
+
+1. Click **Share** on the top of the left panel
+2. Click **Export Config**
+
+![Save](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/saveconfig.png)  
+
+3. Click the **Export** button from the export modal
+
+![Export](https://raw.githubusercontent.com/cwhite911/trianglenc-crime/master/images/export.png)  
+
 
 ### 13. Create a team visualization with the other members at your table or by yourself using one of the following datasets.
 
